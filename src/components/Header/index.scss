@@ -1,20 +1,22 @@
-.header {
+@import "../../styles/variables.scss";
+
+.Header {
   margin-bottom: 1.45rem;
 
-  background-color: rebeccapurple;
+  background-color: $color-deep-blue;
 
   h1 {
     margin: 0;
   }
 }
 
-.header-inner {
+.Header-inner {
   max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+  padding: 50px 20px 50px 20px;
   margin: 0 auto;
 }
 
-.header-link {
+.Header-link {
   color: white !important;
 
   text-decoration: none !important;

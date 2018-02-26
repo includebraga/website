@@ -4,10 +4,10 @@ import Link from "gatsby-link";
 import "./index.scss";
 
 const Header = () => (
-  <div className="header">
-    <div className="header-inner">
+  <div className="Header">
+    <div className="Header-inner">
       <h1 style={{ margin: 0 }}>
-        <Link to="/" className="header-link">
+        <Link to="/" className="Header-link">
           Include Braga
         </Link>
       </h1>
