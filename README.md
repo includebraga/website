@@ -10,5 +10,5 @@ You can check this link [here](https://www.gatsbyjs.org/docs/building-with-compo
 
 Due to issues with Netlify, it's better to use `npm` instead of `yarn`. So, to contribute to this repository simply clone it and run `npm install`.
 
-For development purposes you should run `npm run development`, and then visit the website at `localhost:8000`. This command auto compiles the source code with hot reloading enabled.
+For development purposes you should run `npm run develop`, and then visit the website at `localhost:8000`. This command auto compiles the source code with hot reloading enabled.
 
