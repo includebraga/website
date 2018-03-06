@@ -1,23 +1,86 @@
 @import "../../styles/variables.scss";
 
 .Header {
+  position: fixed;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: $size-base $size-xxlarge $size-base $size-xxlarge;
   margin-bottom: 1.45rem;
 
   background-color: $color-deep-blue;
 
-  h1 {
+  color: white;
+
+  h2 {
     margin: 0;
   }
 }
 
-.Header-inner {
-  max-width: 960px;
-  padding: 50px 20px 50px 20px;
-  margin: 0 auto;
+.Header-left {
+  justify-content: flex-start;
 }
 
 .Header-link {
   color: white !important;
 
   text-decoration: none !important;
+}
+
+.Header-logo {
+  font-family: $font-family-mono;
+  font-weight: $font-weight-bold;
+  vertical-align: text-bottom;
+  white-space: nowrap;
+}
+
+.Header-right {
+  justify-content: flex-end;
+
+  h3 {
+    padding-left: $size-base;
+  }
+}
+
+.Header-sections {
+  display: flex;
+  flex-direction: row;
+}
+
+.Header-sections-responsive {
+  display: none;
+}
+
+.Header-button {
+  margin: 0 auto;
+
+  outline: none;
+
+  line-height: inherit !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .Header {
+    padding: $size-base;
+  }
+
+  .Header-sections {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Header-sections-responsive {
+    display: flex;
+
+    flex-direction: column;
+
+    h3 {
+      padding: 0;
+    }
+  }
 }
