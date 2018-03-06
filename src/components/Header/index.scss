@@ -10,7 +10,6 @@
   width: 100%;
 
   padding: $size-base $size-xxlarge $size-base $size-xxlarge;
-  margin-bottom: 1.45rem;
 
   background-color: $color-deep-blue;
 
@@ -41,8 +40,12 @@
 .Header-right {
   justify-content: flex-end;
 
+  a:not(:last-child) {
+    margin-right: $size-base;
+  }
+
   h3 {
-    padding-left: $size-base;
+    margin: 0;
   }
 }
 
@@ -71,9 +74,7 @@
   .Header-sections {
     display: none;
   }
-}
 
-@media only screen and (max-width: 1024px) {
   .Header-sections-responsive {
     display: flex;
 
@@ -81,6 +82,10 @@
 
     h3 {
       padding: 0;
+    }
+
+    a {
+      margin-top: $size-base;
     }
   }
 }
