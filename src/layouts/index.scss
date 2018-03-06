@@ -21,39 +21,39 @@ section {
 
 @media all and (min-width: 960px) {
   body {
-    font-size: $fontSize-small;
-    line-height: $lineHeight-medium;
+    font-size: $font-size-small;
+    line-height: $line-height-medium;
   }
 
   .Content {
     padding-top: calc(
-      #{$size-xxlarge} + (#{$size-base}*2) + #{$lineHeight-medium}
+      #{$size-xxlarge} + (#{$size-base}*2) + #{$line-height-medium}
     );
   }
 }
 
 @media all and (max-width: 959px) and (min-width: 600px) {
   body {
-    font-size: $fontSize-small;
-    line-height: $lineHeight-small;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
   }
 
   .Content {
     padding-top: calc(
-      #{$size-xlarge} + (#{$size-base}*2) + #{$lineHeight-small}
+      #{$size-xlarge} + (#{$size-base}*2) + #{$line-height-small}
     );
   }
 }
 
 @media all and (max-width: 599px) {
   body {
-    font-size: $fontSize-xsmall;
-    line-height: $lineHeight-xsmall;
+    font-size: $font-size-xsmall;
+    line-height: $line-height-xsmall;
   }
 
   .Content {
     padding-top: calc(
-      #{$size-large} + (#{$size-base}*2) + #{$lineHeight-xsmall}
+      #{$size-large} + (#{$size-base}*2) + #{$line-height-xsmall}
     );
   }
 }

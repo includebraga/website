@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Merriweather');
 
-$font-family-mono: 'Fira Mono', monospace;
-$font-family-serif: 'Merriweather', serif;
-$font-weight-regular: 400;
-$font-weight-bold: 700;
-
 $color-black: #000000;
 $color-dark-blue-grey: #2d3e50;
 $color-deep-blue: #161f28;
@@ -30,17 +25,18 @@ $Logo-padding: 2px;
 
 // Typography
 
-$fontSize-xsmall: 12px;
-$fontSize-small: 16px;
-$fontSize-medium: 20px;
-$fontSize-large: 28px;
-$fontSize-xlarge: 36px;
-$lineHeight-xsmall: 16px;
-$lineHeight-small: 20px;
-$lineHeight-medium: 28px;
-$lineHeight-large: 36px;
-$lineHeight-xlarge: 52px;
-$fontFamily: 'proxima-nova', helvetica arial, sans-serif;
-$fontWeight-light: 300;
-$fontWeight-regular: 400;
-$fontWeight-bold: 700;
+$font-family-mono: 'Fira Mono', monospace;
+$font-family-serif: 'Merriweather', serif;
+$font-size-xsmall: 12px;
+$font-size-small: 16px;
+$font-size-medium: 20px;
+$font-size-large: 28px;
+$font-size-xlarge: 36px;
+$line-height-xsmall: 16px;
+$line-height-small: 20px;
+$line-height-medium: 28px;
+$line-height-large: 36px;
+$line-height-xlarge: 52px;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
