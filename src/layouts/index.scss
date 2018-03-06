@@ -12,6 +12,10 @@ body {
   padding-right: $size-base;
 }
 
+section {
+  height: 300px;
+}
+
 @media all and (min-width: 960px) {
   body {
     font-size: $fontSize-small;
@@ -38,7 +42,7 @@ body {
   }
 }
 
-@media all and (max-width: 599px){
+@media all and (max-width: 599px) {
   body {
     font-size: $fontSize-xsmall;
     line-height: $lineHeight-xsmall;

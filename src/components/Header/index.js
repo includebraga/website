@@ -27,12 +27,20 @@ export default class Header extends React.Component {
     showMenu: false,
   };
 
+  componentDidMount() {
+    document.addEventListener("click", this.handleBlur);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("click", this.handleBlur);
+  }
+
   handleBlur = () => {
     this.setState({ showMenu: false });
   };
 
   handleClick = event => {
-    event.preventDefault();
+    event.nativeEvent.stopImmediatePropagation();
 
     this.setState({ showMenu: !this.state.showMenu });
   };
@@ -45,7 +53,6 @@ export default class Header extends React.Component {
         }`}
         onClick={this.handleClick}
         onKeyPress={this.handleClick}
-        onBlur={this.handleBlur}
         role="button"
         tabIndex={0}
       />
