@@ -6,29 +6,40 @@ import "./index.scss";
 const sections = [
   {
     name: "Section 1",
-    link: "#section1",
+    link: "section1",
   },
   {
     name: "Section 2",
-    link: "#section2",
+    link: "section2",
   },
   {
     name: "Section 3",
-    link: "#section3",
+    link: "section3",
   },
   {
     name: "Section 4",
-    link: "#section4",
+    link: "section4",
   },
 ];
 
 export default class Header extends React.Component {
   state = {
     showMenu: false,
+    scrollTarget: null,
   };
 
   componentDidMount() {
     document.addEventListener("click", this.handleBlur);
+  }
+
+  componentDidUpdate() {
+    if (this.state.scrollTarget) {
+      const targetHeight =
+        document.getElementById(this.state.scrollTarget).offsetTop -
+        document.getElementById("nav").clientHeight * 2;
+
+      window.scrollTo(0, targetHeight);
+    }
   }
 
   componentWillUnmount() {
@@ -43,6 +54,14 @@ export default class Header extends React.Component {
     event.nativeEvent.stopImmediatePropagation();
 
     this.setState({ showMenu: !this.state.showMenu });
+  };
+
+  goToSection = event => {
+    const link = event.target.dataset.target;
+
+    event.nativeEvent.stopImmediatePropagation();
+    this.setState({ scrollTarget: link });
+    this.handleBlur();
   };
 
   renderMenu() {
@@ -67,15 +86,23 @@ export default class Header extends React.Component {
 
   renderSections() {
     return sections.map(section => (
-      <Link to={section.link} key={section.link} className="Header-link">
+      <div
+        key={section.link}
+        data-target={section.link}
+        onClick={this.goToSection}
+        onKeyPress={this.goToSection}
+        className="Header-link"
+        role="link"
+        tabIndex={0}
+      >
         {section.name}
-      </Link>
+      </div>
     ));
   }
 
   render() {
     return (
-      <div className="Header">
+      <nav id="nav" className="Header">
         <div className="Header-left">
           <Link to="/" className="Header-link">
             <h2 className="Header-logo">#include &lt;braga&gt;</h2>
@@ -84,7 +111,7 @@ export default class Header extends React.Component {
 
         <div className="Header-sections">{this.renderSections()}</div>
         <div className="Header-sections-responsive">{this.renderMenu()}</div>
-      </div>
+      </nav>
     );
   }
 }

@@ -32,8 +32,13 @@
   flex-direction: row;
   align-items: center;
 
-  font-size: $fontSize-medium;
   margin-bottom: $size-large;
+
+  font-size: $fontSize-medium;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .Footer-socialItem:not(:last-child) {
@@ -58,7 +63,6 @@
 }
 
 .Footer-tagline {
-
   color: $color-white;
 
   font-family: $font-family-serif;

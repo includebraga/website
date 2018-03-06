@@ -1,15 +1,18 @@
 @import "../styles/variables.scss";
 
 body {
+
+  width: 100%;
+
   font-family: $font-family-mono;
   font-weight: $font-weight-regular;
 }
 
 .Content {
   max-width: 960px;
-  margin: 0 auto;
-  padding-left: $size-base;
   padding-right: $size-base;
+  padding-left: $size-base;
+  margin: 0 auto;
 }
 
 section {

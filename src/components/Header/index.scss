@@ -2,22 +2,18 @@
 
 .Header {
   position: fixed;
+  right: 0;
+  left: 0;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  width: 100%;
 
   padding: $size-base $size-xxlarge $size-base $size-xxlarge;
 
   background-color: $color-deep-blue;
 
   color: white;
-
-  h2 {
-    margin: 0;
-  }
 }
 
 .Header-left {
@@ -30,9 +26,13 @@
   text-decoration: none !important;
 }
 
+.Header-link:not(:last-child) {
+  margin-right: $size-base;
+}
+
 .Header-logo {
-  font-size: $fontSize-medium;
   font-family: $font-family-mono;
+  font-size: $fontSize-medium;
   font-weight: $font-weight-bold;
   vertical-align: text-bottom;
   white-space: nowrap;
@@ -41,14 +41,6 @@
 .Header-sections {
   display: flex;
   flex-direction: row;
-
-  a:not(:last-child) {
-    margin-right: $size-base;
-  }
-
-  h3 {
-    margin: 0;
-  }
 }
 
 .Header-sections-responsive {
@@ -77,11 +69,7 @@
 
     flex-direction: column;
 
-    h3 {
-      padding: 0;
-    }
-
-    a {
+    .Header-link {
       margin-top: $size-base;
     }
   }
