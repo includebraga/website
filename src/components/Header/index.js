@@ -4,18 +4,22 @@ import Link from "gatsby-link";
 import "./index.scss";
 
 const sections = [
-  <Link to="#section1" className="Header-link">
-    <h3>Secção1</h3>
-  </Link>,
-  <Link to="#section2" className="Header-link">
-    <h3>Secção2</h3>
-  </Link>,
-  <Link to="#section3" className="Header-link">
-    <h3>Secção3</h3>
-  </Link>,
-  <Link to="#section4" className="Header-link">
-    <h3>Secção4</h3>
-  </Link>,
+  {
+    name: "Section 1",
+    link: "#section1",
+  },
+  {
+    name: "Section 2",
+    link: "#section2",
+  },
+  {
+    name: "Section 3",
+    link: "#section3",
+  },
+  {
+    name: "Section 4",
+    link: "#section4",
+  },
 ];
 
 export default class Header extends React.Component {
@@ -48,10 +52,18 @@ export default class Header extends React.Component {
     );
 
     if (this.state.showMenu) {
-      return [Icon, sections];
+      return [Icon, this.renderSections()];
     }
 
     return Icon;
+  }
+
+  renderSections() {
+    return sections.map(section => (
+      <Link to={section.link} key={section.link} className="Header-link">
+        {section.name}
+      </Link>
+    ));
   }
 
   render() {
@@ -63,10 +75,8 @@ export default class Header extends React.Component {
           </Link>
         </div>
 
-        <div className="Header-right">
-          <div className="Header-sections">{sections}</div>
-          <div className="Header-sections-responsive">{this.renderMenu()}</div>
-        </div>
+        <div className="Header-sections">{this.renderSections()}</div>
+        <div className="Header-sections-responsive">{this.renderMenu()}</div>
       </div>
     );
   }

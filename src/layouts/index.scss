@@ -2,26 +2,51 @@
 
 body {
   font-family: $font-family-mono;
-  font-size: $size-small;
   font-weight: $font-weight-regular;
-  line-height: $size-base;
-
-  @media (min-width: $max-tablet-size) {
-    font-size: $size-base;
-    line-height: $size-large;
-  }
 }
 
 .Content {
   max-width: 960px;
-  padding-top: calc(#{$size-xxlarge} + #{$size-xxlarge} + #{$size-small});
   margin: 0 auto;
+  padding-left: $size-base;
+  padding-right: $size-base;
 }
 
-@media (min-width: $max-tablet-size) {
+@media all and (min-width: 960px) {
+  body {
+    font-size: $fontSize-small;
+    line-height: $lineHeight-medium;
+  }
+
   .Content {
-    max-width: 960px;
-    padding-top: calc(#{$size-xxlarge} + #{$size-xxlarge} + #{$size-base});
-    margin: 0 auto;
+    padding-top: calc(
+      #{$size-xxlarge} + (#{$size-base}*2) + #{$lineHeight-medium}
+    );
+  }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+  body {
+    font-size: $fontSize-small;
+    line-height: $lineHeight-small;
+  }
+
+  .Content {
+    padding-top: calc(
+      #{$size-xlarge} + (#{$size-base}*2) + #{$lineHeight-small}
+    );
+  }
+}
+
+@media all and (max-width: 599px){
+  body {
+    font-size: $fontSize-xsmall;
+    line-height: $lineHeight-xsmall;
+  }
+
+  .Content {
+    padding-top: calc(
+      #{$size-large} + (#{$size-base}*2) + #{$lineHeight-xsmall}
+    );
   }
 }

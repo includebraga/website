@@ -9,12 +9,12 @@
   display: flex;
   justify-content: center;
 
-  padding: $size-xxlarge $size-large;
+  padding: $size-large $size-large;
 
   background-color: $color-deep-blue;
 
   @media (min-width: $max-tablet-size) {
-    padding: $size-xxlarge;
+    padding: $size-large;
   }
 }
 
@@ -33,6 +33,7 @@
   flex-direction: row;
   align-items: center;
 
+  font-size: $fontSize-medium;
   margin-bottom: $size-large;
 }
 
