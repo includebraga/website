@@ -68,16 +68,16 @@
   font-family: $font-family-serif;
   font-size: $size-small;
   line-height: $size-base;
-}
+};
 
 .Footer-logo {
-  padding: $Logo-padding;
+  padding: 2px;
 
   background-color: $color-yellow;
   color: $color-deep-blue;
 
   font-family: $font-family-mono;
-  font-size: $Logo-font-size-small;
+  font-size: 12px;
   font-weight: $font-weight-bold;
   line-height: $size-small;
   vertical-align: text-bottom;

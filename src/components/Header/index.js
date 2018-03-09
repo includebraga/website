@@ -86,17 +86,16 @@ export default class Header extends React.Component {
 
   renderSections() {
     return sections.map(section => (
-      <div
+      <a
         key={section.link}
         data-target={section.link}
+        href={`#${section.link}`}
         onClick={this.goToSection}
         onKeyPress={this.goToSection}
         className="Header-link"
-        role="link"
-        tabIndex={0}
       >
         {section.name}
-      </div>
+      </a>
     ));
   }
 
