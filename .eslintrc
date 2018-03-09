@@ -8,6 +8,7 @@
     "test": true,
     "document": true,
     "window": true,
+    "performance": true,
     "graphql": true
   },
   "rules": {

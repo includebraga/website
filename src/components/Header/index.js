@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import scrollTo from "../../utils/scrollTo";
 
 import "./index.scss";
 
@@ -38,7 +39,7 @@ export default class Header extends React.Component {
         document.getElementById(this.state.scrollTarget).offsetTop -
         document.getElementById("nav").clientHeight * 2;
 
-      window.scrollTo(0, targetHeight);
+      scrollTo(targetHeight, 500);
     }
   }
 
