@@ -28,10 +28,6 @@
   text-decoration: none !important;
 }
 
-.Header-link:not(:last-child) {
-  margin-right: $size-base;
-}
-
 .Header-logo {
   font-family: $font-family-mono;
   font-size: $font-size-medium;
@@ -52,9 +48,16 @@
 .Header-button {
   margin: 0 auto;
 
+  cursor: pointer;
   outline: none;
 
   line-height: inherit !important;
+}
+
+@media only screen and (min-width: 801px) {
+  .Header-link:not(:last-child) {
+    margin-right: $size-base;
+  }
 }
 
 @media only screen and (max-width: 800px) {

@@ -65,8 +65,8 @@ export default class Header extends React.Component {
     this.handleBlur();
   };
 
-  renderMenu() {
-    const Icon = (
+  renderMenuIcon() {
+    return (
       <i
         className={`Header-button ${
           this.state.showMenu ? "icon-close" : "icon-menu"
@@ -77,12 +77,6 @@ export default class Header extends React.Component {
         tabIndex={0}
       />
     );
-
-    if (this.state.showMenu) {
-      return [Icon, this.renderSections()];
-    }
-
-    return Icon;
   }
 
   renderSections() {
@@ -111,7 +105,10 @@ export default class Header extends React.Component {
         </div>
 
         <div className="Header-sections">{this.renderSections()}</div>
-        <div className="Header-sections-responsive">{this.renderMenu()}</div>
+        <div className="Header-sections-responsive">
+          {this.renderMenuIcon()}
+          {this.state.showMenu && this.renderSections()}
+        </div>
       </nav>
     );
   }
