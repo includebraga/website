@@ -3,9 +3,6 @@
   "plugins": ["prettier"],
   "parser": "babel-eslint",
   "globals": {
-    "__DEVELOPMENT__": true,
-    "__PRODUCTION__": true,
-    "test": true,
     "document": true,
     "window": true,
     "performance": true,
@@ -26,30 +23,13 @@
         "next": ["const", "let", "var"]
       }
     ],
-    "no-param-reassign": [
-      "error",
-      {
-        "props": true,
-        "ignorePropertyModificationsFor": [
-          "memo",
-          "element",
-          "key",
-          "req",
-          "acc",
-          "result"
-        ]
-      }
-    ],
-    "no-underscore-dangle": "off",
     "class-methods-use-this": "off",
-    "consistent-return": "off",
     "id-length": [
       "error",
       {
         "exceptions": ["_", "x", "y"]
       }
     ],
-    "no-use-before-define": ["error", "nofunc"],
     "no-unused-vars": [
       "error",
       {
