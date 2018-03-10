@@ -1,12 +1,16 @@
 import React from "react";
-import Link from "gatsby-link";
+
+import Section1 from "../sections/Section1";
+import Section2 from "../sections/Section2";
+import Section3 from "../sections/Section3";
+import Section4 from "../sections/Section4";
 
 const IndexPage = () => (
   <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Section1 />
+    <Section2 />
+    <Section3 />
+    <Section4 />
   </div>
 );
 

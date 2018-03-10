@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Merriweather');
 
-$font-family-mono: 'Fira Mono', monospace;
-$font-family-serif: 'Merriweather', serif;
-$font-weight-regular: 400;
-$font-weight-bold: 700;
-
 $color-black: #000000;
 $color-dark-blue-grey: #2d3e50;
 $color-deep-blue: #161f28;
@@ -13,13 +8,32 @@ $color-red: #f95252;
 $color-white: #ffffff;
 $color-yellow: #e5c650;
 
-$size-xsmall: 11px;
+$size-xxsmall: 8px;
+$size-xsmall: 12px;
 $size-small: 16px;
-$size-base: 23px;
-$size-large: 32px;
-$size-xlarge: 45px;
-$size-xxlarge: 64px;
+$size-base: 24px;
+$size-large: 40px;
+$size-xlarge: 64px;
+$size-xxlarge: 84px;
 
 $max-tablet-size: 768px;
 
 $grid-size: 992px;
+
+// Typography
+
+$font-family-mono: 'Fira Mono', monospace;
+$font-family-serif: 'Merriweather', serif;
+$font-size-xsmall: 12px;
+$font-size-small: 16px;
+$font-size-medium: 20px;
+$font-size-large: 28px;
+$font-size-xlarge: 36px;
+$line-height-xsmall: 16px;
+$line-height-small: 20px;
+$line-height-medium: 28px;
+$line-height-large: 36px;
+$line-height-xlarge: 52px;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;

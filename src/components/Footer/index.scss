@@ -1,10 +1,6 @@
 @import "../../styles/variables.scss";
 
-$Logo-font-size-small: 12px;
-$Logo-padding: 2px;
-
 .Footer {
-  position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
@@ -12,12 +8,12 @@ $Logo-padding: 2px;
   display: flex;
   justify-content: center;
 
-  padding: $size-xxlarge $size-large;
+  padding: $size-large $size-large;
 
   background-color: $color-deep-blue;
 
   @media (min-width: $max-tablet-size) {
-    padding: $size-xxlarge;
+    padding: $size-large;
   }
 }
 
@@ -37,6 +33,12 @@ $Logo-padding: 2px;
   align-items: center;
 
   margin-bottom: $size-large;
+
+  font-size: $font-size-medium;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .Footer-socialItem:not(:last-child) {
@@ -61,22 +63,21 @@ $Logo-padding: 2px;
 }
 
 .Footer-tagline {
-
   color: $color-white;
 
   font-family: $font-family-serif;
   font-size: $size-small;
   line-height: $size-base;
-}
+};
 
 .Footer-logo {
-  padding: $Logo-padding;
+  padding: 2px;
 
   background-color: $color-yellow;
   color: $color-deep-blue;
 
   font-family: $font-family-mono;
-  font-size: $Logo-font-size-small;
+  font-size: $size-xsmall;
   font-weight: $font-weight-bold;
   line-height: $size-small;
   vertical-align: text-bottom;
