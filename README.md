@@ -1,6 +1,6 @@
 # Include Braga's Website
 
-[![Build Status](https://semaphoreci.com/api/v1/zeesousa/includebraga-website/branches/master/badge.svg)](https://semaphoreci.com/zeesousa/includebraga-website)
+[![Build Status](https://semaphoreci.com/api/v1/includebraga/includebraga-website/branches/master/badge.svg)](https://semaphoreci.com/includebraga/includebraga-website)
 
 This repository here contains all the code for our website. It uses Gatsby, a static site generator based on React. The website shall be deployed on [Netlify](https://www.netlify.com), a tool that works like Heroku, but only for front-end apps.
 
