@@ -1,11 +1,14 @@
 @import "../styles/variables.scss";
 
-body {
+html { font-size: calc(80% + 0.5vw) }
 
+body {
   width: 100%;
 
   font-family: $font-family-mono;
   font-weight: $font-weight-regular;
+
+  line-height: 1.5;
 }
 
 .Content {
@@ -16,28 +19,19 @@ body {
 }
 
 section {
-  height: 300px;
+  min-height: 300px;
+  padding-bottom: $size-xxlarge;
 }
 
 @media all and (min-width: 960px) {
-  body {
-    font-size: $font-size-small;
-    line-height: $line-height-medium;
-  }
-
   .Content {
     padding-top: calc(
-      #{$size-xxlarge} + (#{$size-base}*2) + #{$line-height-medium}
+      #{$size-xxlarge} + (#{$size-base}*2) + #{$line-height-small}
     );
   }
 }
 
 @media all and (max-width: 959px) and (min-width: 600px) {
-  body {
-    font-size: $font-size-small;
-    line-height: $line-height-small;
-  }
-
   .Content {
     padding-top: calc(
       #{$size-xlarge} + (#{$size-base}*2) + #{$line-height-small}
@@ -46,11 +40,6 @@ section {
 }
 
 @media all and (max-width: 599px) {
-  body {
-    font-size: $font-size-xsmall;
-    line-height: $line-height-xsmall;
-  }
-
   .Content {
     padding-top: calc(
       #{$size-large} + (#{$size-base}*2) + #{$line-height-xsmall}
