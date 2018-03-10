@@ -67,8 +67,8 @@
 
   font-family: $font-family-serif;
   font-size: $size-small;
-  line-height: $size-base;
-};
+  line-height: $size-small;
+}
 
 .Footer-logo {
   padding: 2px;
@@ -77,9 +77,8 @@
   color: $color-deep-blue;
 
   font-family: $font-family-mono;
-  font-size: $size-xsmall;
+  font-size: $font-size-xsmall;
   font-weight: $font-weight-bold;
-  line-height: $size-small;
-  vertical-align: text-bottom;
+
   white-space: nowrap;
 }
