@@ -54,7 +54,7 @@ export default class Header extends React.Component {
   handleClick = event => {
     event.nativeEvent.stopImmediatePropagation();
 
-    this.setState({ showMenu: !this.state.showMenu });
+    this.setState({ showMenu: !this.state.showMenu, scrollTarget: null });
   };
 
   goToSection = event => {
