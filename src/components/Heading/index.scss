@@ -17,21 +17,21 @@
 }
 
 .Heading-level1 {
-  font-size: 2em;
+  font-size: $font-size-xlarge;
 }
 
 .Heading-level2 {
-  font-size: 1.5em;
+  font-size: $font-size-large;
 }
 
 .Heading-level3 {
-  font-size: 1.17em;
+  font-size: $font-size-medium;
 }
 
 .Heading-level4 {
-  font-size: 1em;
+  font-size: $font-size-small;
 }
 
 .Heading-level5 {
-  font-size: .83em;
+  font-size: $font-size-xsmall;
 }

@@ -1,6 +1,8 @@
 @import "../styles/variables.scss";
 
-html { font-size: calc(80% + 0.5vw) }
+html {
+  font-size: calc(80% + 0.5vw);
+}
 
 body {
   width: 100%;
@@ -13,6 +15,7 @@ body {
 
 .Content {
   max-width: 960px;
+  padding-top: calc(#{$size-xxlarge} + #{$line-height-small});
   padding-right: $size-base;
   padding-left: $size-base;
   margin: 0 auto;
@@ -21,28 +24,4 @@ body {
 section {
   min-height: 300px;
   padding-bottom: $size-xxlarge;
-}
-
-@media all and (min-width: 960px) {
-  .Content {
-    padding-top: calc(
-      #{$size-xxlarge} + (#{$size-base}*2) + #{$line-height-small}
-    );
-  }
-}
-
-@media all and (max-width: 959px) and (min-width: 600px) {
-  .Content {
-    padding-top: calc(
-      #{$size-xlarge} + (#{$size-base}*2) + #{$line-height-small}
-    );
-  }
-}
-
-@media all and (max-width: 599px) {
-  .Content {
-    padding-top: calc(
-      #{$size-large} + (#{$size-base}*2) + #{$line-height-xsmall}
-    );
-  }
 }
