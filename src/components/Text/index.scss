@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+.Text-light {
+  font-weight: $font-weight-light;
+}
+
+.Text-regular {
+  font-weight: $font-weight-regular;
+}
+
+.Text-bold {
+  font-weight: $font-weight-bold;
+}
+
+.Text-xsmall {
+  font-size: $font-size-xsmall;
+}
+
+.Text-small {
+  font-size: $font-size-small;
+}
+
+.Text-medium {
+  font-size: $font-size-medium;
+}
+
+.Text-large {
+  font-size: $font-size-large;
+}
+
+.Text-xlarge {
+  font-size: $font-size-xlarge;
+}

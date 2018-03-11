@@ -14,6 +14,8 @@
   background-color: $color-deep-blue;
 
   color: white;
+
+  line-height: $line-height-medium;
 }
 
 .Header-left {
@@ -62,7 +64,8 @@
 
 @media only screen and (max-width: 800px) {
   .Header {
-    padding: $size-base;
+    padding-right: $size-base;
+    padding-left: $size-base;
   }
 
   .Header-sections {

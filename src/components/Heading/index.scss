@@ -1,0 +1,37 @@
+@import "../../styles/variables.scss";
+
+.Heading-light {
+  font-weight: $font-weight-light;
+}
+
+.Heading-regular {
+  font-weight: $font-weight-regular;
+}
+
+.Heading-bold {
+  font-weight: $font-weight-bold;
+}
+
+.Heading-xsmall {
+  font-size: $font-size-xsmall;
+}
+
+.Heading-level1 {
+  font-size: $font-size-xlarge;
+}
+
+.Heading-level2 {
+  font-size: $font-size-large;
+}
+
+.Heading-level3 {
+  font-size: $font-size-medium;
+}
+
+.Heading-level4 {
+  font-size: $font-size-small;
+}
+
+.Heading-level5 {
+  font-size: $font-size-xsmall;
+}
