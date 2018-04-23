@@ -3,10 +3,11 @@ import React from "react";
 import "./index.scss";
 
 const socialIcons = [
+  { href: "mailto:includebraga@gmail.com", icon: "icon-envelope" },
+  { href: "https://github.com/includebraga", icon: "icon-social-github" },
   { href: "https://facebook.com/includebraga", icon: "icon-social-facebook" },
   { href: "https://instagram.com/includebraga", icon: "icon-social-instagram" },
   { href: "https://twitter.com/includebraga", icon: "icon-social-twitter" },
-  { href: "https://github.com/includebraga", icon: "icon-social-github" },
 ];
 
 const Footer = () => (
@@ -27,7 +28,7 @@ const Footer = () => (
       </div>
 
       <div className="Footer-tagline">
-        Crafted with{" "}
+        hacked with{" "}
         <span role="img" aria-label="love">
           ❤️
         </span>{" "}

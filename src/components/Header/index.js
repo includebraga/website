@@ -6,20 +6,24 @@ import "./index.scss";
 
 const sections = [
   {
-    name: "Section 1",
-    link: "section1",
+    name: "whoami",
+    link: "whoweare",
   },
   {
-    name: "Section 2",
-    link: "section2",
+    name: "ps",
+    link: "whatwedo",
   },
   {
-    name: "Section 3",
-    link: "section3",
+    name: "history",
+    link: "history",
   },
   {
-    name: "Section 4",
-    link: "section4",
+    name: "users",
+    link: "team",
+  },
+  {
+    name: "mail",
+    link: "contact",
   },
 ];
 
