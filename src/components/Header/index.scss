@@ -11,11 +11,15 @@
 
   padding: $size-base $size-xxlarge $size-base $size-xxlarge;
 
-  background-color: $color-deep-blue;
+  background-color: $color-white;
 
-  color: white;
+  color: $color-dark-blue-grey;
 
   line-height: $line-height-medium;
+}
+
+.Header.Header--withShadow {
+  box-shadow: 0 2px 11px rgba(0, 0, 0, 0.1);
 }
 
 .Header-left {
@@ -23,7 +27,7 @@
 }
 
 .Header-link {
-  color: white !important;
+  color: $color-dark-blue-grey !important;
 
   cursor: pointer;
 

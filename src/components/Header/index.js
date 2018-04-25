@@ -31,10 +31,12 @@ export default class Header extends React.Component {
   state = {
     showMenu: false,
     scrollTarget: null,
+    navShadow: false,
   };
 
   componentDidMount() {
     document.addEventListener("click", this.handleBlur);
+    document.addEventListener("scroll", this.handleScroll);
   }
 
   componentDidUpdate() {
@@ -49,10 +51,15 @@ export default class Header extends React.Component {
 
   componentWillUnmount() {
     document.removeEventListener("click", this.handleBlur);
+    document.removeEventListener("nav", this.handleScroll);
   }
 
   handleBlur = () => {
     this.setState({ showMenu: false });
+  };
+
+  handleScroll = event => {
+    this.setState({ navShadow: event.pageY !== 0 });
   };
 
   handleClick = event => {
@@ -100,8 +107,12 @@ export default class Header extends React.Component {
   }
 
   render() {
+    const className = this.state.navShadow
+      ? "Header Header--withShadow"
+      : "Header";
+
     return (
-      <nav id="nav" className="Header">
+      <nav id="nav" className={className}>
         <div className="Header-left">
           <Link to="/" className="Header-link">
             <h2 className="Header-logo">#include &lt;braga&gt;</h2>
