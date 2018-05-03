@@ -5,7 +5,7 @@ import Text from "../../components/Text";
 export default function WhoWeAre() {
   return (
     <section id="whoweare">
-      <Heading level="1">$ whoami</Heading>
+      <Heading level="3">$ whoami</Heading>
       <Text>
         &gt; O #include &lt;braga&gt; é um movimento de voluntariado com base na
         tecnologia que procura ajudar as pessoas e instituições em necessidade.

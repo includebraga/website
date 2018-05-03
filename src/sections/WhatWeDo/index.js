@@ -5,7 +5,7 @@ import Text from "../../components/Text";
 export default function WhatWeDo() {
   return (
     <section id="whatwedo">
-      <Heading level="1">$ ps ax -U include</Heading>
+      <Heading level="3">$ ps ax -U include</Heading>
       <Text>
         &gt; Na sua essência, o include é conhecido por se divertir a brincar
         com tecnologia. Nós fazemos as coisas acontecer. Desenvolvemos
