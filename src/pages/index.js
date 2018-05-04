@@ -1,16 +1,19 @@
 import React from "react";
 
-import WhoWeAre from "../sections/WhoWeAre";
-import WhatWeDo from "../sections/WhatWeDo";
 import History from "../sections/History";
 import Team from "../sections/Team";
+import Terminal from "../components/Terminal";
+import WhatWeDo from "../sections/WhatWeDo";
+import WhoWeAre from "../sections/WhoWeAre";
 
 const IndexPage = () => (
   <div>
-    <WhoWeAre />
-    <WhatWeDo />
-    <History />
-    <Team />
+    <Terminal>
+      <WhoWeAre />
+      <WhatWeDo />
+      <History />
+      <Team />
+    </Terminal>
   </div>
 );
 

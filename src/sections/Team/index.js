@@ -5,7 +5,7 @@ import Text from "../../components/Text";
 export default function Team() {
   return (
     <section id="team">
-      <Heading level="1">$ users</Heading>
+      <Heading level="3">$ users</Heading>
       <Text>
         Somos 10 programadores, 1 designer, 3 estudantes de comunicação, 1
         estudante de biomédica e 1 estudante de Línguas e Literaturas.

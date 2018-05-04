@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+$terminalButtonSize: 10px;
+$menuBorder: 5px;
+$menuHeight: 1.9em;
+
+.terminal {
+  box-shadow: $floatingShadow;
+}
+
+.button {
+  display: inline-block;
+
+  width: $terminalButtonSize;
+  height: $terminalButtonSize;
+  margin-left: $size-xxsmall;
+
+  border: 1px solid $color-black;
+  border-radius: 50%;
+}
+
+.close {
+  background-color: $color-red;
+  border-color: $color-blood-red;
+}
+
+.minimize {
+  background-color: $color-yellow;
+  border-color: $color-olive-yellow;
+}
+
+.fullscreen {
+  background-color: $color-green;
+  border-color: $color-leaf-green;
+}
+
+.menu {
+  box-sizing: border-box;
+
+  background-color: $color-gray;
+  border-top-right-radius: $menuBorder;
+  border-top-left-radius: $menuBorder;
+
+  line-height: $menuHeight;
+}
+
+.window {
+  display: grid;
+  grid-row-gap: $size-xlarge;
+
+  padding: 0 $size-base $size-small $size-base;
+
+  border-bottom-right-radius: $menuBorder;
+  border-bottom-left-radius: $menuBorder;
+}

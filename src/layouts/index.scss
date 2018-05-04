@@ -1,5 +1,7 @@
 @import "../styles/variables.scss";
 
+$padding-vertical: calc(#{$size-xxlarge} + #{$line-height-small});
+
 html {
   font-size: calc(80% + 0.2vw);
 }
@@ -15,13 +17,6 @@ body {
 
 .Content {
   max-width: 960px;
-  padding-top: calc(#{$size-xxlarge} + #{$line-height-small});
-  padding-right: $size-base;
-  padding-left: $size-base;
+  padding: $padding-vertical $size-base $size-xlarge $size-base;
   margin: 0 auto;
-}
-
-section {
-  min-height: 300px;
-  padding-bottom: $size-xxlarge;
 }
