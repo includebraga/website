@@ -49,6 +49,6 @@
     "gh-pages": "^1.1.0",
     "prettier": "^1.10.2",
     "stylelint": "^9.0.0",
-    "stylelint-order": "^0.8.1"
+    "stylelint-order": "^1.0.0"
   }
 }
