@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Include Braga",
   "dependencies": {
-    "autoprefixer": "^8.0.0",
+    "autoprefixer": "^9.6.1",
     "gatsby": "^1.9.146",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-google-analytics": "^1.0.19",
