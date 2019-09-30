@@ -14,7 +14,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.10.1",
     "react-helmet": "^5.2.0",
-    "react-images": "^0.5.14",
+    "react-images": "^1.0.0",
     "simple-line-icons": "^2.4.1"
   },
   "homepage": "https://github.com/jfranciscosousa/jfranciscosousa.github.io",
