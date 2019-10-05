@@ -19,7 +19,7 @@
     "react-images": "^1.0.0",
     "simple-line-icons": "^2.4.1"
   },
-  "homepage": "https://github.com/jfranciscosousa/jfranciscosousa.github.io",
+  "homepage": "https://github.com/includebraga/website",
   "keywords": [
     "gatsby",
     "includebraga",
@@ -29,7 +29,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jfranciscosousa/jfranciscosousa.github.io"
+    "url": "https://github.com/includebraga/website"
   },
   "scripts": {
     "lint": "eslint src",
