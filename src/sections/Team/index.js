@@ -6,7 +6,7 @@ const members = [
   "Ângela Morais",
   "Catarina Lopes",
   "Fernando Mendes",
-  "Francisco Sousa",
+  "Xico Sousa",
   "Hugo Gonçalves",
   "Regina Sousa",
   "Sofia Sepúlveda",

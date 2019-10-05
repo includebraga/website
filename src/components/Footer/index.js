@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./index.scss";
+import "./index.css";
 
 const socialIcons = [
   { href: "mailto:includebraga@gmail.com", icon: "icon-envelope" },
@@ -20,6 +20,7 @@ const Footer = () => (
               className="Footer-socialLink"
               href={socialIcon.href}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className={socialIcon.icon} />
             </a>

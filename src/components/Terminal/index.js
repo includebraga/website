@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./index.scss";
+import "./index.css";
 
 const Terminal = ({ children }) => (
   <div className="terminal">
