@@ -8,15 +8,12 @@
     "gatsby": "^2.15.29",
     "gatsby-link": "^2.2.18",
     "gatsby-plugin-postcss": "^2.1.10",
-    "gatsby-plugin-postcss-sass": "^1.0.17",
     "gatsby-plugin-react-helmet": "^3.1.10",
-    "gatsby-plugin-sass": "^2.1.17",
     "postcss-import": "^12.0.1",
     "precss": "^4.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.10.1",
     "react-helmet": "^5.2.0",
-    "react-images": "^1.0.0",
     "simple-line-icons": "^2.4.1"
   },
   "homepage": "https://github.com/includebraga/website",
@@ -46,7 +43,6 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.15.1",
-    "gh-pages": "^2.1.1",
     "prettier": "^1.10.2",
     "stylelint": "^11.0.0",
     "stylelint-order": "^3.1.1"
