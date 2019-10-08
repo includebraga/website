@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./index.scss";
+import "./index.css";
 
 export default class Heading extends React.Component {
   static propTypes = {

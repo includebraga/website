@@ -2,7 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import scrollTo from "../../utils/scrollTo";
 
-import "./index.scss";
+import "./index.css";
 
 const sections = [
   {
@@ -40,9 +40,11 @@ export default class Header extends React.Component {
   }
 
   componentDidUpdate() {
-    if (this.state.scrollTarget) {
+    const { scrollTarget } = this.state;
+
+    if (scrollTarget) {
       const targetHeight =
-        document.getElementById(this.state.scrollTarget).offsetTop -
+        document.getElementById(scrollTarget).offsetTop -
         document.getElementById("nav").clientHeight * 2;
 
       scrollTo(targetHeight, 500);
@@ -63,9 +65,11 @@ export default class Header extends React.Component {
   };
 
   handleClick = event => {
+    const { showMenu } = this.state;
+
     event.nativeEvent.stopImmediatePropagation();
 
-    this.setState({ showMenu: !this.state.showMenu, scrollTarget: null });
+    this.setState({ showMenu: !showMenu, scrollTarget: null });
   };
 
   goToSection = event => {
@@ -77,15 +81,16 @@ export default class Header extends React.Component {
   };
 
   renderMenuIcon() {
+    const { showMenu } = this.state;
+
     return (
       <i
-        className={`Header-button ${
-          this.state.showMenu ? "icon-close" : "icon-menu"
-        }`}
+        className={`Header-button ${showMenu ? "icon-close" : "icon-menu"}`}
         onClick={this.handleClick}
         onKeyPress={this.handleClick}
         role="button"
         tabIndex={0}
+        aria-label={showMenu ? "icon-close" : "icon-menu"}
       />
     );
   }
@@ -107,9 +112,9 @@ export default class Header extends React.Component {
   }
 
   render() {
-    const className = this.state.navShadow
-      ? "Header Header--withShadow"
-      : "Header";
+    const { navShadow, showMenu } = this.state;
+
+    const className = navShadow ? "Header Header--withShadow" : "Header";
 
     return (
       <nav id="nav" className={className}>
@@ -122,7 +127,7 @@ export default class Header extends React.Component {
         <div className="Header-sections">{this.renderSections()}</div>
         <div className="Header-sections-responsive">
           {this.renderMenuIcon()}
-          {this.state.showMenu && this.renderSections()}
+          {showMenu && this.renderSections()}
         </div>
       </nav>
     );

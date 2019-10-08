@@ -8,26 +8,5 @@ module.exports = {
       "O #include <braga> é um movimento de voluntariado com base na tecnologia que procura ajudar pessoas e instituições em necessidade.",
     keywords: "include braga voluntariado tecnologia",
   },
-  plugins: [
-    "gatsby-plugin-react-helmet",
-    {
-      resolve: "gatsby-plugin-postcss-sass",
-      options: {
-        postCssPlugins: [
-          autoprefixer({
-            browsers: ["last 2 versions"],
-          }),
-        ],
-        precision: 8,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "UA-109836349-2",
-        head: true,
-        anonymize: true,
-      },
-    },
-  ],
+  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-postcss"],
 };
