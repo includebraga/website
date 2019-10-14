@@ -7,7 +7,7 @@
     "autoprefixer": "^9.6.5",
     "gatsby": "^2.16.0",
     "gatsby-link": "^2.2.20",
-    "gatsby-plugin-postcss": "^2.1.11",
+    "gatsby-plugin-postcss": "^2.1.13",
     "gatsby-plugin-react-helmet": "^3.1.12",
     "postcss-import": "^12.0.1",
     "precss": "^4.0.0",
