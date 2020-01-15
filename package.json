@@ -5,7 +5,7 @@
   "author": "Include Braga",
   "dependencies": {
     "autoprefixer": "^9.7.3",
-    "gatsby": "^2.18.18",
+    "gatsby": "^2.18.22",
     "gatsby-link": "^2.2.24",
     "gatsby-plugin-postcss": "^2.1.18",
     "gatsby-plugin-react-helmet": "^3.1.18",
